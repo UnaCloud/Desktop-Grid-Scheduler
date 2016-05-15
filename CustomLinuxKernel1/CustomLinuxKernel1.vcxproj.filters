@@ -1,0 +1,966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{3ffa88e7-9748-449b-957f-423cced10ee7}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{a6d0b7a7-f232-46eb-9ff6-fd39c2220434}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{1aaf5970-8fd7-4c10-a55a-303f3216d4c7}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\kernel">
+      <UniqueIdentifier>{d583f139-30c8-4ecc-9f86-46adceb52b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel">
+      <UniqueIdentifier>{facead7a-98d8-4504-bf98-c711a8002fd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\bpf">
+      <UniqueIdentifier>{c59a8127-a760-4ab3-90c5-c17a3098ad32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\debug">
+      <UniqueIdentifier>{21601028-6432-407a-8ace-3778a15ed050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\debug">
+      <UniqueIdentifier>{978f74e6-ef30-4497-8641-8e628d77f424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\debug\kdb">
+      <UniqueIdentifier>{f0858233-091d-4f52-8b2d-e5e621cce27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\debug\kdb">
+      <UniqueIdentifier>{5016d7f2-d6a0-4026-a951-9efd659adadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\events">
+      <UniqueIdentifier>{76fa267a-ec8d-47ef-a761-ed4b143297f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\events">
+      <UniqueIdentifier>{fdafcc0e-7578-47b5-b014-f9c76ed141d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\gcov">
+      <UniqueIdentifier>{58256e31-19fe-4e7f-a257-bf65515acc03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\gcov">
+      <UniqueIdentifier>{a4ae0b09-7100-4964-be83-1dd957fc6e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\irq">
+      <UniqueIdentifier>{3dd1ec34-8fc1-4d11-9028-f73582b40295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\irq">
+      <UniqueIdentifier>{42aa7866-4c52-43fd-9b8d-0844b57e10a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\locking">
+      <UniqueIdentifier>{ed3b8941-8856-4048-9f8a-03d89764eeb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\locking">
+      <UniqueIdentifier>{c97f2194-1f4a-4d47-93a9-77d1c5091004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\power">
+      <UniqueIdentifier>{2e422b45-174e-4ffd-879a-851d7581c776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\power">
+      <UniqueIdentifier>{43bd3671-550a-46c0-acf9-c98ed8299b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\printk">
+      <UniqueIdentifier>{aee3fdef-f51b-490e-aec1-558e1e5e714f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\printk">
+      <UniqueIdentifier>{c874af10-0a07-40e7-bb54-715514158566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\rcu">
+      <UniqueIdentifier>{82a5e711-8754-47bb-993d-4e1346aea0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\rcu">
+      <UniqueIdentifier>{ed8d10b2-e3a8-45bc-8136-10d8af756ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\sched">
+      <UniqueIdentifier>{4b922321-1de7-4d04-8adb-14f258753d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\sched">
+      <UniqueIdentifier>{3cf9ea2f-6b0e-464e-b96d-4f4445b5ad07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\time">
+      <UniqueIdentifier>{5e07b35c-c7c1-4c20-a839-a8fc04fd5b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\time">
+      <UniqueIdentifier>{2fa4c2c3-06fe-4f46-acf6-1bba4073b714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\kernel\trace">
+      <UniqueIdentifier>{c7283751-50d2-48ff-b7a6-1e5ef1bd1a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\kernel\trace">
+      <UniqueIdentifier>{1b198e21-478a-4068-8e97-ec89670ab8a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="kernel\acct.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\async.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\audit.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\auditfilter.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\auditsc.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\audit_tree.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\audit_watch.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\backtracetest.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bounds.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\capability.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cgroup.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cgroup_freezer.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\compat.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\configs.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\context_tracking.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cpu.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cpuset.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cpu_pm.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\crash_dump.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\cred.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\delayacct.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\dma.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\elfcore.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\exec_domain.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\exit.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\extable.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\fork.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\freezer.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\futex.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\futex_compat.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\groups.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\hung_task.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq_work.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\jump_label.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kallsyms.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kcmp.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kexec.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kmod.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kprobes.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\ksysfs.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\kthread.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\latencytop.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\module.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\module_signing.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\notifier.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\nsproxy.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\padata.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\panic.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\params.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\pid.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\pid_namespace.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\profile.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\ptrace.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\range.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\reboot.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\relay.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\resource.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\seccomp.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\signal.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\smp.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\smpboot.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\softirq.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\stacktrace.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\stop_machine.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sys.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sysctl.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sysctl_binary.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\system_keyring.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sys_ni.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\taskstats.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\task_work.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\test_kprobes.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\torture.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\tracepoint.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\tsacct.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\uid16.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\up.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\user-return-notifier.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\user.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\user_namespace.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\utsname.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\utsname_sysctl.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\watchdog.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\workqueue.c">
+      <Filter>Source files\kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\arraymap.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\core.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\hashtab.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\helpers.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\syscall.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\test_stub.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\bpf\verifier.c">
+      <Filter>Source files\kernel\bpf</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\debug_core.c">
+      <Filter>Source files\kernel\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\gdbstub.c">
+      <Filter>Source files\kernel\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_bp.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_bt.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_debugger.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_io.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_keyboard.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_main.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\debug\kdb\kdb_support.c">
+      <Filter>Source files\kernel\debug\kdb</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\events\callchain.c">
+      <Filter>Source files\kernel\events</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\events\core.c">
+      <Filter>Source files\kernel\events</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\events\hw_breakpoint.c">
+      <Filter>Source files\kernel\events</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\events\ring_buffer.c">
+      <Filter>Source files\kernel\events</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\events\uprobes.c">
+      <Filter>Source files\kernel\events</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\gcov\base.c">
+      <Filter>Source files\kernel\gcov</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\gcov\fs.c">
+      <Filter>Source files\kernel\gcov</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\gcov\gcc_3_4.c">
+      <Filter>Source files\kernel\gcov</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\gcov\gcc_4_7.c">
+      <Filter>Source files\kernel\gcov</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\autoprobe.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\chip.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\devres.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\dummychip.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\generic-chip.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\handle.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\irqdesc.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\irqdomain.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\manage.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\migration.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\msi.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\pm.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\proc.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\resend.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\irq\spurious.c">
+      <Filter>Source files\kernel\irq</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\lglock.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\lockdep.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\lockdep_proc.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\locktorture.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\mcs_spinlock.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\mutex-debug.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\mutex.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\percpu-rwsem.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\qrwlock.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rtmutex-debug.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rtmutex-tester.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rtmutex.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rwsem-spinlock.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rwsem-xadd.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\rwsem.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\semaphore.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\spinlock.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\locking\spinlock_debug.c">
+      <Filter>Source files\kernel\locking</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\autosleep.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\block_io.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\console.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\hibernate.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\main.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\poweroff.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\process.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\qos.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\snapshot.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\suspend.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\suspend_test.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\swap.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\user.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\power\wakelock.c">
+      <Filter>Source files\kernel\power</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\printk\braille.c">
+      <Filter>Source files\kernel\printk</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\printk\printk.c">
+      <Filter>Source files\kernel\printk</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\rcutorture.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\srcu.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\tiny.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\tree.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\tree_trace.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\rcu\update.c">
+      <Filter>Source files\kernel\rcu</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\auto_group.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\clock.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\completion.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\core.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\cpuacct.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\cpudeadline.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\cpupri.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\cputime.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\deadline.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\debug.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\fair.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\idle.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\idle_task.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\proc.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\rt.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\stats.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\stop_task.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\wait.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\alarmtimer.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\clockevents.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\clocksource.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\hrtimer.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\itimer.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\jiffies.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\ntp.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\posix-clock.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\posix-cpu-timers.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\posix-timers.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\sched_clock.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\test_udelay.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\tick-broadcast-hrtimer.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\tick-broadcast.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\tick-common.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\tick-oneshot.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\tick-sched.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\time.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timeconv.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timekeeping.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timekeeping_debug.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timer.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timer_list.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\time\timer_stats.c">
+      <Filter>Source files\kernel\time</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\blktrace.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\ftrace.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\power-traces.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\ring_buffer.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\ring_buffer_benchmark.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\rpm-traces.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_benchmark.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_branch.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_clock.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_events.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_events_filter.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_events_trigger.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_event_perf.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_export.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_functions.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_functions_graph.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_irqsoff.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_kdb.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_kprobe.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_mmiotrace.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_nop.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_output.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_printk.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_probe.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_sched_switch.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_sched_wakeup.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_selftest.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_selftest_dynamic.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_seq.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_stack.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_stat.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_syscalls.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\trace\trace_uprobe.c">
+      <Filter>Source files\kernel\trace</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel\sched\bg.c">
+      <Filter>Source files\kernel\sched</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="kernel\audit.h">
+      <Filter>Header files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\module-internal.h">
+      <Filter>Header files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\smpboot.h">
+      <Filter>Header files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\workqueue_internal.h">
+      <Filter>Header files\kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\debug\debug_core.h">
+      <Filter>Header files\kernel\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\debug\kdb\kdb_private.h">
+      <Filter>Header files\kernel\debug\kdb</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\events\internal.h">
+      <Filter>Header files\kernel\events</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\gcov\gcov.h">
+      <Filter>Header files\kernel\gcov</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\irq\debug.h">
+      <Filter>Header files\kernel\irq</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\irq\internals.h">
+      <Filter>Header files\kernel\irq</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\irq\settings.h">
+      <Filter>Header files\kernel\irq</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\lockdep_internals.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\lockdep_states.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\mcs_spinlock.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\mutex-debug.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\mutex.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\rtmutex-debug.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\rtmutex.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\locking\rtmutex_common.h">
+      <Filter>Header files\kernel\locking</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\power\power.h">
+      <Filter>Header files\kernel\power</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\printk\braille.h">
+      <Filter>Header files\kernel\printk</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\printk\console_cmdline.h">
+      <Filter>Header files\kernel\printk</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\rcu\rcu.h">
+      <Filter>Header files\kernel\rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\rcu\tiny_plugin.h">
+      <Filter>Header files\kernel\rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\rcu\tree.h">
+      <Filter>Header files\kernel\rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\rcu\tree_plugin.h">
+      <Filter>Header files\kernel\rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\auto_group.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\cpuacct.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\cpudeadline.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\cpupri.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\features.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\sched.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\sched\stats.h">
+      <Filter>Header files\kernel\sched</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\time\ntp_internal.h">
+      <Filter>Header files\kernel\time</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\time\tick-internal.h">
+      <Filter>Header files\kernel\time</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\time\timekeeping.h">
+      <Filter>Header files\kernel\time</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\time\timekeeping_internal.h">
+      <Filter>Header files\kernel\time</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_benchmark.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_entries.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_events_filter_test.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_output.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_probe.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel\trace\trace_stat.h">
+      <Filter>Header files\kernel\trace</Filter>
+    </ClInclude>
+    <ClInclude Include="include\linux\sched.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uapi\linux\sched.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arch\x86\Kconfig" />
+  </ItemGroup>
+</Project>

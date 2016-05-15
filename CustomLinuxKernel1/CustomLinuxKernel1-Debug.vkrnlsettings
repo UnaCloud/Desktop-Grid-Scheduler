@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<VisualGDBProjectSettings2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConfigurationName>Debug</ConfigurationName>
+  <Project xsi:type="com.visualgdb.project.linux.kernel">
+    <CustomSourceDirectories>
+      <Directories />
+      <PathStyle>RemoteUnix</PathStyle>
+    </CustomSourceDirectories>
+    <KernelDebugHost>
+      <HostName>192.168.249.131</HostName>
+      <Transport>SSH</Transport>
+      <UserName>root</UserName>
+    </KernelDebugHost>
+    <MainSourceTransferCommand>
+      <SkipWhenRunningCommandList>false</SkipWhenRunningCommandList>
+      <RemoteHost>
+        <HostName>192.168.249.131</HostName>
+        <Transport>SSH</Transport>
+        <UserName>root</UserName>
+      </RemoteHost>
+      <LocalDirectory>$(ProjectDir)</LocalDirectory>
+      <RemoteDirectory>/usr/src/linux-source-3.19.0/linux-source-3.19.0</RemoteDirectory>
+      <FileMasks>
+        <string>*.cpp</string>
+        <string>*.h</string>
+        <string>*.c</string>
+        <string>*.cc</string>
+        <string>*.cxx</string>
+        <string>*.mak</string>
+        <string>Makefile</string>
+        <string>*.txt</string>
+        <string>*.cmake</string>
+      </FileMasks>
+      <TransferNewFilesOnly>true</TransferNewFilesOnly>
+      <IncludeSubdirectories>true</IncludeSubdirectories>
+      <SelectedDirectories />
+    </MainSourceTransferCommand>
+    <SkipBuildIfNoSourceFilesChanged>true</SkipBuildIfNoSourceFilesChanged>
+    <IgnoreFileTransferErrors>false</IgnoreFileTransferErrors>
+  </Project>
+  <Build xsi:type="com.visualgdb.build.linux.kernel.custom_kernel">
+    <VerboseBuild>false</VerboseBuild>
+    <ParallelJobCount>4</ParallelJobCount>
+    <AutoDownloadKernel>true</AutoDownloadKernel>
+    <AutoInstallKernel>true</AutoInstallKernel>
+    <ModuleHandlingMode>Automatic</ModuleHandlingMode>
+    <MakeExecutable>make</MakeExecutable>
+    <MakeEnvironment>
+      <Records />
+    </MakeEnvironment>
+    <AdditionalMakeArgs />
+    <BuildWithSudo>false</BuildWithSudo>
+  </Build>
+  <Debug xsi:type="com.visualgdb.debug.linux.kernel">
+    <AdditionalStartupCommands />
+    <AdditionalGDBSettings>
+      <FilterSpuriousStoppedNotifications>false</FilterSpuriousStoppedNotifications>
+      <ForceSingleThreadedMode>false</ForceSingleThreadedMode>
+      <PendingBreakpointsSupported>true</PendingBreakpointsSupported>
+      <DisableChildRanges>false</DisableChildRanges>
+      <UseAppleExtensions>false</UseAppleExtensions>
+      <CanAcceptCommandsWhileRunning>false</CanAcceptCommandsWhileRunning>
+      <MakeLogFile>false</MakeLogFile>
+      <IgnoreModuleEventsWhileStepping>true</IgnoreModuleEventsWhileStepping>
+      <UseRelativePathsOnly>true</UseRelativePathsOnly>
+      <ExitAction>None</ExitAction>
+      <Features>
+        <DisableAutoDetection>false</DisableAutoDetection>
+        <UseFrameParameter>false</UseFrameParameter>
+        <SimpleValuesFlagSupported>false</SimpleValuesFlagSupported>
+        <ListLocalsSupported>false</ListLocalsSupported>
+        <ByteLevelMemoryCommandsAvailable>false</ByteLevelMemoryCommandsAvailable>
+        <ThreadInfoSupported>false</ThreadInfoSupported>
+        <PendingBreakpointsSupported>false</PendingBreakpointsSupported>
+        <SupportTargetCommand>false</SupportTargetCommand>
+      </Features>
+      <DisableDisassembly>false</DisableDisassembly>
+      <ExamineMemoryWithXCommand>false</ExamineMemoryWithXCommand>
+      <StepIntoNewInstanceEntry>main</StepIntoNewInstanceEntry>
+      <ExamineRegistersInRawFormat>true</ExamineRegistersInRawFormat>
+      <EnableSmartStepping>true</EnableSmartStepping>
+      <DisableSignals>false</DisableSignals>
+      <EnableAsyncExecutionMode>false</EnableAsyncExecutionMode>
+      <EnableNonStopMode>false</EnableNonStopMode>
+    </AdditionalGDBSettings>
+    <GenerateCtrlBreakInsteadOfCtrlC>false</GenerateCtrlBreakInsteadOfCtrlC>
+    <RunGDBWithSUDO>false</RunGDBWithSUDO>
+    <DeploymentDirectory>/tmp</DeploymentDirectory>
+    <KernelConnection xsi:type="com.visualgdb.debug.linux.kernel.connection.vm">
+      <VMFile>C:\Users\Antonio de la Vega\Documents\Virtual Machines\CustomKernel\CustomKernel.vmx</VMFile>
+      <Bitness>AutoDetet</Bitness>
+      <Type>VMWare</Type>
+    </KernelConnection>
+    <SessionSettings>
+      <EnumerateModulesOnStart>true</EnumerateModulesOnStart>
+      <DetectModuleLoadEvents>true</DetectModuleLoadEvents>
+      <HookPrintk>true</HookPrintk>
+      <EnableDebugHelper>true</EnableDebugHelper>
+      <DebugHangingMachine>false</DebugHangingMachine>
+      <SymbolSettings>
+        <AutoLoadSymbolsForMainModule>true</AutoLoadSymbolsForMainModule>
+        <InTreeModuleMode>LoadNone</InTreeModuleMode>
+        <AutoLoadInTreeSymbolsOnModuleLoad>true</AutoLoadInTreeSymbolsOnModuleLoad>
+      </SymbolSettings>
+      <DelayedSymbolLoadingWorkaround>false</DelayedSymbolLoadingWorkaround>
+      <StopOnModuleEvents>false</StopOnModuleEvents>
+    </SessionSettings>
+  </Debug>
+  <CustomBuild>
+    <PreBuildActions />
+    <PostBuildActions />
+    <PreCleanActions />
+    <PostCleanActions />
+  </CustomBuild>
+  <CustomDebug>
+    <PreDebugActions />
+    <PostDebugActions />
+    <DebugStopActions />
+    <BreakMode>Default</BreakMode>
+  </CustomDebug>
+  <CustomShortcuts>
+    <Shortcuts />
+    <ShowMessageAfterExecuting>true</ShowMessageAfterExecuting>
+  </CustomShortcuts>
+  <UserDefinedVariables />
+  <ImportedPropertySheets />
+  <CodeSense>
+    <Enabled>Unknown</Enabled>
+    <ExtraSettings>
+      <HideErrorsInSystemHeaders>true</HideErrorsInSystemHeaders>
+    </ExtraSettings>
+  </CodeSense>
+</VisualGDBProjectSettings2>
