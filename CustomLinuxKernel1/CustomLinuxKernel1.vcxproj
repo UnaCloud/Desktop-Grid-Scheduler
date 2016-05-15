@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AA27CE4F-9E1B-404C-B2A8-F95E5E7783ED}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>.\arch\x86\include;arch\x86\include\generated\uapi;arch\x86\include\generated;include;.\arch\x86\include\uapi;.\include\uapi;include\generated\uapi;ubuntu\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.249.131\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALKERNEL_DIR)\gcc_compat.h;..\..\Program Files (x86)\Sysprogs\VisualKernel\KernelTools\common\kernel_compat.h;$(LOCALAPPDATA)\VisualGDB\AutoDownloadedSources\192.168.249.131\kconfig.h\kconfig.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"C:\Program Files (x86)\Sysprogs\VisualKernel\VisualKernel.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALKERNEL_DIR)\VisualKernel.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALKERNEL_DIR)\VisualKernel.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)CustomLinuxKernel1-Debug.vkrnlsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>.\arch\x86\include;arch\x86\include\generated\uapi;arch\x86\include\generated;include;.\arch\x86\include\uapi;.\include\uapi;include\generated\uapi;ubuntu\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.249.131\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALKERNEL_DIR)\gcc_compat.h;..\..\Program Files (x86)\Sysprogs\VisualKernel\KernelTools\common\kernel_compat.h;$(LOCALAPPDATA)\VisualGDB\AutoDownloadedSources\192.168.249.131\kconfig.h\kconfig.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>"$(VISUALKERNEL_DIR)\VisualKernel.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALKERNEL_DIR)\VisualKernel.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALKERNEL_DIR)\VisualKernel.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)CustomLinuxKernel1-Release.vkrnlsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="arch\x86\Kconfig" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="kernel\acct.c" />
+    <ClCompile Include="kernel\async.c" />
+    <ClCompile Include="kernel\audit.c" />
+    <ClCompile Include="kernel\auditfilter.c" />
+    <ClCompile Include="kernel\auditsc.c" />
+    <ClCompile Include="kernel\audit_tree.c" />
+    <ClCompile Include="kernel\audit_watch.c" />
+    <ClCompile Include="kernel\backtracetest.c" />
+    <ClCompile Include="kernel\bounds.c" />
+    <ClCompile Include="kernel\capability.c" />
+    <ClCompile Include="kernel\cgroup.c" />
+    <ClCompile Include="kernel\cgroup_freezer.c" />
+    <ClCompile Include="kernel\compat.c" />
+    <ClCompile Include="kernel\configs.c" />
+    <ClCompile Include="kernel\context_tracking.c" />
+    <ClCompile Include="kernel\cpu.c" />
+    <ClCompile Include="kernel\cpuset.c" />
+    <ClCompile Include="kernel\cpu_pm.c" />
+    <ClCompile Include="kernel\crash_dump.c" />
+    <ClCompile Include="kernel\cred.c" />
+    <ClCompile Include="kernel\delayacct.c" />
+    <ClCompile Include="kernel\dma.c" />
+    <ClCompile Include="kernel\elfcore.c" />
+    <ClCompile Include="kernel\exec_domain.c" />
+    <ClCompile Include="kernel\exit.c" />
+    <ClCompile Include="kernel\extable.c" />
+    <ClCompile Include="kernel\fork.c" />
+    <ClCompile Include="kernel\freezer.c" />
+    <ClCompile Include="kernel\futex.c" />
+    <ClCompile Include="kernel\futex_compat.c" />
+    <ClCompile Include="kernel\groups.c" />
+    <ClCompile Include="kernel\hung_task.c" />
+    <ClCompile Include="kernel\irq_work.c" />
+    <ClCompile Include="kernel\jump_label.c" />
+    <ClCompile Include="kernel\kallsyms.c" />
+    <ClCompile Include="kernel\kcmp.c" />
+    <ClCompile Include="kernel\kexec.c" />
+    <ClCompile Include="kernel\kmod.c" />
+    <ClCompile Include="kernel\kprobes.c" />
+    <ClCompile Include="kernel\ksysfs.c" />
+    <ClCompile Include="kernel\kthread.c" />
+    <ClCompile Include="kernel\latencytop.c" />
+    <ClCompile Include="kernel\module.c" />
+    <ClCompile Include="kernel\module_signing.c" />
+    <ClCompile Include="kernel\notifier.c" />
+    <ClCompile Include="kernel\nsproxy.c" />
+    <ClCompile Include="kernel\padata.c" />
+    <ClCompile Include="kernel\panic.c" />
+    <ClCompile Include="kernel\params.c" />
+    <ClCompile Include="kernel\pid.c" />
+    <ClCompile Include="kernel\pid_namespace.c" />
+    <ClCompile Include="kernel\profile.c" />
+    <ClCompile Include="kernel\ptrace.c" />
+    <ClCompile Include="kernel\range.c" />
+    <ClCompile Include="kernel\reboot.c" />
+    <ClCompile Include="kernel\relay.c" />
+    <ClCompile Include="kernel\resource.c" />
+    <ClCompile Include="kernel\sched\bg.c" />
+    <ClCompile Include="kernel\seccomp.c" />
+    <ClCompile Include="kernel\signal.c" />
+    <ClCompile Include="kernel\smp.c" />
+    <ClCompile Include="kernel\smpboot.c" />
+    <ClCompile Include="kernel\softirq.c" />
+    <ClCompile Include="kernel\stacktrace.c" />
+    <ClCompile Include="kernel\stop_machine.c" />
+    <ClCompile Include="kernel\sys.c" />
+    <ClCompile Include="kernel\sysctl.c" />
+    <ClCompile Include="kernel\sysctl_binary.c" />
+    <ClCompile Include="kernel\system_keyring.c" />
+    <ClCompile Include="kernel\sys_ni.c" />
+    <ClCompile Include="kernel\taskstats.c" />
+    <ClCompile Include="kernel\task_work.c" />
+    <ClCompile Include="kernel\test_kprobes.c" />
+    <ClCompile Include="kernel\torture.c" />
+    <ClCompile Include="kernel\tracepoint.c" />
+    <ClCompile Include="kernel\tsacct.c" />
+    <ClCompile Include="kernel\uid16.c" />
+    <ClCompile Include="kernel\up.c" />
+    <ClCompile Include="kernel\user-return-notifier.c" />
+    <ClCompile Include="kernel\user.c" />
+    <ClCompile Include="kernel\user_namespace.c" />
+    <ClCompile Include="kernel\utsname.c" />
+    <ClCompile Include="kernel\utsname_sysctl.c" />
+    <ClCompile Include="kernel\watchdog.c" />
+    <ClCompile Include="kernel\workqueue.c" />
+    <ClCompile Include="kernel\bpf\arraymap.c" />
+    <ClCompile Include="kernel\bpf\core.c" />
+    <ClCompile Include="kernel\bpf\hashtab.c" />
+    <ClCompile Include="kernel\bpf\helpers.c" />
+    <ClCompile Include="kernel\bpf\syscall.c" />
+    <ClCompile Include="kernel\bpf\test_stub.c" />
+    <ClCompile Include="kernel\bpf\verifier.c" />
+    <ClCompile Include="kernel\debug\debug_core.c" />
+    <ClCompile Include="kernel\debug\gdbstub.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_bp.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_bt.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_debugger.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_io.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_keyboard.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_main.c" />
+    <ClCompile Include="kernel\debug\kdb\kdb_support.c" />
+    <ClCompile Include="kernel\events\callchain.c" />
+    <ClCompile Include="kernel\events\core.c" />
+    <ClCompile Include="kernel\events\hw_breakpoint.c" />
+    <ClCompile Include="kernel\events\ring_buffer.c" />
+    <ClCompile Include="kernel\events\uprobes.c" />
+    <ClCompile Include="kernel\gcov\base.c" />
+    <ClCompile Include="kernel\gcov\fs.c" />
+    <ClCompile Include="kernel\gcov\gcc_3_4.c" />
+    <ClCompile Include="kernel\gcov\gcc_4_7.c" />
+    <ClCompile Include="kernel\irq\autoprobe.c" />
+    <ClCompile Include="kernel\irq\chip.c" />
+    <ClCompile Include="kernel\irq\devres.c" />
+    <ClCompile Include="kernel\irq\dummychip.c" />
+    <ClCompile Include="kernel\irq\generic-chip.c" />
+    <ClCompile Include="kernel\irq\handle.c" />
+    <ClCompile Include="kernel\irq\irqdesc.c" />
+    <ClCompile Include="kernel\irq\irqdomain.c" />
+    <ClCompile Include="kernel\irq\manage.c" />
+    <ClCompile Include="kernel\irq\migration.c" />
+    <ClCompile Include="kernel\irq\msi.c" />
+    <ClCompile Include="kernel\irq\pm.c" />
+    <ClCompile Include="kernel\irq\proc.c" />
+    <ClCompile Include="kernel\irq\resend.c" />
+    <ClCompile Include="kernel\irq\spurious.c" />
+    <ClCompile Include="kernel\locking\lglock.c" />
+    <ClCompile Include="kernel\locking\lockdep.c" />
+    <ClCompile Include="kernel\locking\lockdep_proc.c" />
+    <ClCompile Include="kernel\locking\locktorture.c" />
+    <ClCompile Include="kernel\locking\mcs_spinlock.c" />
+    <ClCompile Include="kernel\locking\mutex-debug.c" />
+    <ClCompile Include="kernel\locking\mutex.c" />
+    <ClCompile Include="kernel\locking\percpu-rwsem.c" />
+    <ClCompile Include="kernel\locking\qrwlock.c" />
+    <ClCompile Include="kernel\locking\rtmutex-debug.c" />
+    <ClCompile Include="kernel\locking\rtmutex-tester.c" />
+    <ClCompile Include="kernel\locking\rtmutex.c" />
+    <ClCompile Include="kernel\locking\rwsem-spinlock.c" />
+    <ClCompile Include="kernel\locking\rwsem-xadd.c" />
+    <ClCompile Include="kernel\locking\rwsem.c" />
+    <ClCompile Include="kernel\locking\semaphore.c" />
+    <ClCompile Include="kernel\locking\spinlock.c" />
+    <ClCompile Include="kernel\locking\spinlock_debug.c" />
+    <ClCompile Include="kernel\power\autosleep.c" />
+    <ClCompile Include="kernel\power\block_io.c" />
+    <ClCompile Include="kernel\power\console.c" />
+    <ClCompile Include="kernel\power\hibernate.c" />
+    <ClCompile Include="kernel\power\main.c" />
+    <ClCompile Include="kernel\power\poweroff.c" />
+    <ClCompile Include="kernel\power\process.c" />
+    <ClCompile Include="kernel\power\qos.c" />
+    <ClCompile Include="kernel\power\snapshot.c" />
+    <ClCompile Include="kernel\power\suspend.c" />
+    <ClCompile Include="kernel\power\suspend_test.c" />
+    <ClCompile Include="kernel\power\swap.c" />
+    <ClCompile Include="kernel\power\user.c" />
+    <ClCompile Include="kernel\power\wakelock.c" />
+    <ClCompile Include="kernel\printk\braille.c" />
+    <ClCompile Include="kernel\printk\printk.c" />
+    <ClCompile Include="kernel\rcu\rcutorture.c" />
+    <ClCompile Include="kernel\rcu\srcu.c" />
+    <ClCompile Include="kernel\rcu\tiny.c" />
+    <ClCompile Include="kernel\rcu\tree.c" />
+    <ClCompile Include="kernel\rcu\tree_trace.c" />
+    <ClCompile Include="kernel\rcu\update.c" />
+    <ClCompile Include="kernel\sched\auto_group.c" />
+    <ClCompile Include="kernel\sched\clock.c" />
+    <ClCompile Include="kernel\sched\completion.c" />
+    <ClCompile Include="kernel\sched\core.c" />
+    <ClCompile Include="kernel\sched\cpuacct.c" />
+    <ClCompile Include="kernel\sched\cpudeadline.c" />
+    <ClCompile Include="kernel\sched\cpupri.c" />
+    <ClCompile Include="kernel\sched\cputime.c" />
+    <ClCompile Include="kernel\sched\deadline.c" />
+    <ClCompile Include="kernel\sched\debug.c" />
+    <ClCompile Include="kernel\sched\fair.c" />
+    <ClCompile Include="kernel\sched\idle.c" />
+    <ClCompile Include="kernel\sched\idle_task.c" />
+    <ClCompile Include="kernel\sched\proc.c" />
+    <ClCompile Include="kernel\sched\rt.c" />
+    <ClCompile Include="kernel\sched\stats.c" />
+    <ClCompile Include="kernel\sched\stop_task.c" />
+    <ClCompile Include="kernel\sched\wait.c" />
+    <ClCompile Include="kernel\time\alarmtimer.c" />
+    <ClCompile Include="kernel\time\clockevents.c" />
+    <ClCompile Include="kernel\time\clocksource.c" />
+    <ClCompile Include="kernel\time\hrtimer.c" />
+    <ClCompile Include="kernel\time\itimer.c" />
+    <ClCompile Include="kernel\time\jiffies.c" />
+    <ClCompile Include="kernel\time\ntp.c" />
+    <ClCompile Include="kernel\time\posix-clock.c" />
+    <ClCompile Include="kernel\time\posix-cpu-timers.c" />
+    <ClCompile Include="kernel\time\posix-timers.c" />
+    <ClCompile Include="kernel\time\sched_clock.c" />
+    <ClCompile Include="kernel\time\test_udelay.c" />
+    <ClCompile Include="kernel\time\tick-broadcast-hrtimer.c" />
+    <ClCompile Include="kernel\time\tick-broadcast.c" />
+    <ClCompile Include="kernel\time\tick-common.c" />
+    <ClCompile Include="kernel\time\tick-oneshot.c" />
+    <ClCompile Include="kernel\time\tick-sched.c" />
+    <ClCompile Include="kernel\time\time.c" />
+    <ClCompile Include="kernel\time\timeconv.c" />
+    <ClCompile Include="kernel\time\timekeeping.c" />
+    <ClCompile Include="kernel\time\timekeeping_debug.c" />
+    <ClCompile Include="kernel\time\timer.c" />
+    <ClCompile Include="kernel\time\timer_list.c" />
+    <ClCompile Include="kernel\time\timer_stats.c" />
+    <ClCompile Include="kernel\trace\blktrace.c" />
+    <ClCompile Include="kernel\trace\ftrace.c" />
+    <ClCompile Include="kernel\trace\power-traces.c" />
+    <ClCompile Include="kernel\trace\ring_buffer.c" />
+    <ClCompile Include="kernel\trace\ring_buffer_benchmark.c" />
+    <ClCompile Include="kernel\trace\rpm-traces.c" />
+    <ClCompile Include="kernel\trace\trace.c" />
+    <ClCompile Include="kernel\trace\trace_benchmark.c" />
+    <ClCompile Include="kernel\trace\trace_branch.c" />
+    <ClCompile Include="kernel\trace\trace_clock.c" />
+    <ClCompile Include="kernel\trace\trace_events.c" />
+    <ClCompile Include="kernel\trace\trace_events_filter.c" />
+    <ClCompile Include="kernel\trace\trace_events_trigger.c" />
+    <ClCompile Include="kernel\trace\trace_event_perf.c" />
+    <ClCompile Include="kernel\trace\trace_export.c" />
+    <ClCompile Include="kernel\trace\trace_functions.c" />
+    <ClCompile Include="kernel\trace\trace_functions_graph.c" />
+    <ClCompile Include="kernel\trace\trace_irqsoff.c" />
+    <ClCompile Include="kernel\trace\trace_kdb.c" />
+    <ClCompile Include="kernel\trace\trace_kprobe.c" />
+    <ClCompile Include="kernel\trace\trace_mmiotrace.c" />
+    <ClCompile Include="kernel\trace\trace_nop.c" />
+    <ClCompile Include="kernel\trace\trace_output.c" />
+    <ClCompile Include="kernel\trace\trace_printk.c" />
+    <ClCompile Include="kernel\trace\trace_probe.c" />
+    <ClCompile Include="kernel\trace\trace_sched_switch.c" />
+    <ClCompile Include="kernel\trace\trace_sched_wakeup.c" />
+    <ClCompile Include="kernel\trace\trace_selftest.c" />
+    <ClCompile Include="kernel\trace\trace_selftest_dynamic.c" />
+    <ClCompile Include="kernel\trace\trace_seq.c" />
+    <ClCompile Include="kernel\trace\trace_stack.c" />
+    <ClCompile Include="kernel\trace\trace_stat.c" />
+    <ClCompile Include="kernel\trace\trace_syscalls.c" />
+    <ClCompile Include="kernel\trace\trace_uprobe.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\linux\sched.h" />
+    <ClInclude Include="include\uapi\linux\sched.h" />
+    <ClInclude Include="kernel\audit.h" />
+    <ClInclude Include="kernel\module-internal.h" />
+    <ClInclude Include="kernel\smpboot.h" />
+    <ClInclude Include="kernel\workqueue_internal.h" />
+    <ClInclude Include="kernel\debug\debug_core.h" />
+    <ClInclude Include="kernel\debug\kdb\kdb_private.h" />
+    <ClInclude Include="kernel\events\internal.h" />
+    <ClInclude Include="kernel\gcov\gcov.h" />
+    <ClInclude Include="kernel\irq\debug.h" />
+    <ClInclude Include="kernel\irq\internals.h" />
+    <ClInclude Include="kernel\irq\settings.h" />
+    <ClInclude Include="kernel\locking\lockdep_internals.h" />
+    <ClInclude Include="kernel\locking\lockdep_states.h" />
+    <ClInclude Include="kernel\locking\mcs_spinlock.h" />
+    <ClInclude Include="kernel\locking\mutex-debug.h" />
+    <ClInclude Include="kernel\locking\mutex.h" />
+    <ClInclude Include="kernel\locking\rtmutex-debug.h" />
+    <ClInclude Include="kernel\locking\rtmutex.h" />
+    <ClInclude Include="kernel\locking\rtmutex_common.h" />
+    <ClInclude Include="kernel\power\power.h" />
+    <ClInclude Include="kernel\printk\braille.h" />
+    <ClInclude Include="kernel\printk\console_cmdline.h" />
+    <ClInclude Include="kernel\rcu\rcu.h" />
+    <ClInclude Include="kernel\rcu\tiny_plugin.h" />
+    <ClInclude Include="kernel\rcu\tree.h" />
+    <ClInclude Include="kernel\rcu\tree_plugin.h" />
+    <ClInclude Include="kernel\sched\auto_group.h" />
+    <ClInclude Include="kernel\sched\cpuacct.h" />
+    <ClInclude Include="kernel\sched\cpudeadline.h" />
+    <ClInclude Include="kernel\sched\cpupri.h" />
+    <ClInclude Include="kernel\sched\features.h" />
+    <ClInclude Include="kernel\sched\sched.h" />
+    <ClInclude Include="kernel\sched\stats.h" />
+    <ClInclude Include="kernel\time\ntp_internal.h" />
+    <ClInclude Include="kernel\time\tick-internal.h" />
+    <ClInclude Include="kernel\time\timekeeping.h" />
+    <ClInclude Include="kernel\time\timekeeping_internal.h" />
+    <ClInclude Include="kernel\trace\trace.h" />
+    <ClInclude Include="kernel\trace\trace_benchmark.h" />
+    <ClInclude Include="kernel\trace\trace_entries.h" />
+    <ClInclude Include="kernel\trace\trace_events_filter_test.h" />
+    <ClInclude Include="kernel\trace\trace_output.h" />
+    <ClInclude Include="kernel\trace\trace_probe.h" />
+    <ClInclude Include="kernel\trace\trace_stat.h" />
+  </ItemGroup>
+</Project>
